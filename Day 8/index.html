@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selectors</title>
+        <style>
+                /* Element Selector */
+                div{
+                        background-color: red;
+                }
+                /* Class Selector */
+                .red{
+                        background-color: greenyellow;
+                }
+
+                /* ID Selector */
+                #green{
+                        color: darkblue;
+                }
+                /* Child Selector */
+                div>p{
+                        color: rgb(255, 251, 0);
+                        background-color: brown;
+                }
+                /* Descendant Selector */
+                div p{
+                        color: rgb(255, 251, 0);
+                        background-color: brown;
+                }
+                /* Universal Selector */
+                *{
+                        margin: 0;
+                        padding: 0;
+                }
+                /* Pseudo Selector */
+                a:visited{
+                        color: yellow;
+                }
+                a:link{
+                        color: green;
+                }
+                a:active{
+                        background-color: red;
+                }
+                a:hover{
+                        background-color: cyan;
+                }
+                p:first-child{
+                        background-color: aqua;
+                }
+        </style>
+</head>
+<body>
+        <main class="Selector">
+               <p>This is selector 1</p>
+               <p>This is selector 2</p>
+        </main>
+        <div>
+                This is a div
+        </div>
+
+        <div class="red">
+               This is 2nd div
+        </div>
+        <div id="green">
+               This is 3rd div
+               <p>This is a para inside div</p>
+        </div>
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.amazon.in">Go to Amazon</a>
+
+</body>
+</html>
