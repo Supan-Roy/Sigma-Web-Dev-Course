@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Specificity</title>
+        <style>
+                /* The specificity of this selector is 1  */
+                h1 {
+                        color: aqua;
+                }
+
+                /* The specificity of this selector is 10  */
+                .cpurple {
+                        color: purple;
+                }
+
+                /* The specificity of this selector is 1 + 10 = 11  */
+                h1.yellow {
+                        color: yellow;
+                }
+
+                /* This is an example of attribute selector. The specificity of this selector is 10 */
+                [data-x=a] {
+                        background-color: rgb(4, 0, 0);
+                }
+
+                /* The specificity of this selector is 10  */
+                .cred {
+                        color: red;
+                }
+
+                /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+                a.supanclass.roy-class[href]:hover {
+                        color: blueviolet;
+                }
+                /* order: Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+        </style>
+</head>
+
+<body>
+        <div>
+                <h1 style="color: magenta;" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        </div>
+</body>
+
+</html>
