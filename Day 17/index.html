@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Media Queries</title>
+        <style>
+                body{
+                        background-color: red;
+                }
+                @media screen and (orientation: landscape) {
+                        body{
+                                border: 2px solid rgb(4, 255, 4);
+                        }
+                }
+
+                @media only screen and (max-width: 455px){
+                        body{
+                        background-color: blue;
+                        }
+                        .boxes{
+                                flex-direction: column;
+                        }
+                }
+                .boxes{
+                        display: flex;
+                }
+                .box{
+                        width: 344px;
+                        height: 344px;
+                        background-color: steelblue;
+                        padding: 3px;
+                        margin: 4px;
+                }
+        </style>
+</head>
+<body>
+        <div>
+                Hey this is code RED!
+        </div>
+
+        <div class="boxes">
+                <div class="box">Optimus Prime</div>
+                <div class="box">Megatron</div>
+                <div class="box">Bumblebee</div>
+        </div>
+</body>
+</html>
