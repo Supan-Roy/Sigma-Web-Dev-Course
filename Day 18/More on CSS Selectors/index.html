@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>More on CSS Selectors</title>
+        <style>
+                .box:first-child{
+                        background-color: rgb(206, 255, 8);
+                }
+                .box::first-line{
+                        color: rgb(255, 0, 0);
+                }
+                .boxes *{
+                      color: blue; 
+                      border: 2px solid black; 
+                }
+
+                p,a, .box, [data-color="primary"]{
+                        padding-top: 10px;
+                }
+                .box:nth-child(even){
+                        background-color: blue;
+                }
+                .box:nth-last-child(2){
+                        background-color: green;
+                }
+                .boxes::before{
+                        content: "This is Content";
+                }
+                .boxes::after{
+                        content: "Date: 12-FEB-2025";
+                }
+                ::selection{
+                        background-color: black;
+                        color: aqua;
+                }
+                .box::first-letter{
+                        color: rgb(4, 4, 1);
+                        font-size: 40px;
+                }
+                input::placeholder{
+                        color: rgb(133, 138, 115);
+                }
+        </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Dark is a critically acclaimed German science fiction thriller series created by Baran bo Odar and Jantje Friese.
+        Premiering on Netflix in 2017, the show quickly gained international recognition for its intricate storytelling, complex
+        characters, and atmospheric tone. Set in the fictional town of Winden, Dark explores the interconnected lives of four
+        families—the Nielsens, Kahnwalds, Dopplers, and Tiedemanns—as they grapple with the mysterious disappearance of children
+        and the dark secrets lurking beneath the surface of their seemingly ordinary town.
+        
+        At its core, Dark is a time-travel narrative, but it transcends the genre by delving into profound philosophical
+        questions about fate, free will, and the cyclical nature of time. The series is structured around a non-linear timeline,
+        spanning multiple generations and timelines, including 1953, 1986, 2019, and 2052. This intricate web of timelines
+        challenges viewers to pay close attention as the story unfolds, revealing shocking connections between characters and
+        events across different eras.
+        
+        The show’s central mystery revolves around the existence of a wormhole in the caves beneath Winden, which enables time
+        travel. As the characters uncover the truth, they are forced to confront their own roles in perpetuating a cycle of
+        tragedy and betrayal. The series masterfully blends elements of science fiction, horror, and family drama, creating a
+        haunting and immersive experience.
+        
+        One of Dark’s standout features is its meticulous attention to detail. From the haunting score by Ben Frost to the
+        atmospheric cinematography, every aspect of the show contributes to its eerie and suspenseful tone. The performances,
+        particularly by Louis Hofmann, Lisa Vicari, and Oliver Masucci, are compelling and emotionally resonant, adding depth to
+        the already rich narrative.</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>
